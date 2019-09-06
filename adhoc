@@ -1,0 +1,4 @@
+ansible localhost -m ping
+ansible localhost -m copy -a "content='Ansible is awesome' dest=./motd"
+ansible localhost -m command -a "echo 'Ansible is awesome > ./motd"
+ansible localhost -m lineinfile -a "regexp='^Ansible is awesome' line='Ansible is superawesome' path=./motd"
