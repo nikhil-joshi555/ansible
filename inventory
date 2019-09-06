@@ -1,0 +1,2 @@
+[dev]
+lcoalhost ansible_connection=local
